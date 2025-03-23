@@ -12,12 +12,16 @@ This bot has been created using [Bot Framework](https://dev.botframework.com), i
 
 - Clone the repository
 ```bash
-git clone https://github.com/ap9155-hue/02.echo-bot.git
+git clone https://github.com/ap9155-hue/chatbot-sentiment-analysis.git
 ```
-- In a terminal, navigate to `02.echo-bot` folder
+- In a terminal, navigate to `chatbot-sentiment-analysis` folder
 - Activate your desired virtual environment
 - In the terminal, type `pip install -r requirements.txt`
 - Run your bot with `python app.py`
+
+MacOS user has to run this command to set the environment variable in the activated environment
+`export MicrosoftAIServiceEndpoint=<your endpoint>`
+`export MicrosoftAPIKey=<your api key>`
 
 ## Testing the bot using Bot Framework Emulator
 
@@ -33,27 +37,9 @@ git clone https://github.com/ap9155-hue/02.echo-bot.git
 
 ## Interacting with the bot and its capabilities
 
-Welcome to the Chatbot! This bot is here to engage with you, provide useful responses, and even entertain you with some fun features. Below is a list of the capabilities that this chatbot currently supports.
+Welcome to the Chatbot! This bot is here to engage with you, provide useful responses. This bot can be connected with azure service with setting endpoint and api key from your activated environment.
 
-Start a conversation: Simply type something to initiate the interaction.
-Ask questions or request a specific command: Use the predefined phrases (like "tell me something cool", "what can you do?", etc.) or any other input.
-Math calculations: You can also enter mathematical expressions like "5 + 3" or "10 / 2".
-Enjoy the jokes and fun facts: Whenever you're in the mood for something light-hearted, just ask the bot for a joke or fun fact!
-
-1. List of Abilities
-Get a list of commands you can use with the bot, including all the fun things it can do.
-Example:
-
-You: What can you do?
-Bot:
-I can do a few cool things:
-- Tell fun facts
-- Chat about the weather
-- Introduce myself
-- Handle basic errors
-- Tell jokes
-- Perform math calculations
-- Greet you
+This is the simple bot that does sentiment analysis from the connected service.
 
 ## Further reading
 
